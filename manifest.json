@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Onion Location Detector",
+  "version": "2.2",
+  "description": "Shows an icon when a site offers an Onion-Location.",
+  "author": "Leprechaun - github.com/Leproide",
+
+  "permissions": [
+    "webRequest",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "onion-detector@leproide.github.io",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+
+  "icons": {
+    "48": "icons/onion-active-48.png",
+    "96": "icons/onion-active-96.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "action": {
+    "default_icon": {
+      "16": "icons/onion-inactive-16.png",
+      "32": "icons/onion-inactive-32.png"
+    },
+    "default_title": "No .onion site available",
+    "default_area": "navbar"
+  }
+}
