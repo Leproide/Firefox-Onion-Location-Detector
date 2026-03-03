@@ -12,8 +12,8 @@ Take control of your privacy and discover the Tor Onion Services hidden across t
 
 https://addons.mozilla.org/it/firefox/addon/simple-onion-location-detector/
 
-<p style="text-align: center;">
-  <img width="145" height="84" alt="immagine" src="https://github.com/user-attachments/assets/e78a0fe0-1e0e-4cbe-82fa-bbe1e52a6694" />
-  <br />
-  <img width="200" height="57" alt="immagine" src="https://github.com/user-attachments/assets/069c5866-5cb7-4742-a912-02fcf3973eab" />
-</p>
+<div align="center">
+  ![immagine](https://github.com/user-attachments/assets/e78a0fe0-1e0e-4cbe-82fa-bbe1e52a6694)
+  <br>
+  ![immagine](https://github.com/user-attachments/assets/069c5866-5cb7-4742-a912-02fcf3973eab)
+</div>
