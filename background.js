@@ -1,11 +1,11 @@
-// background.js - Version 8.1 (Handles Network Errors)
+// background.js
 
 console.log("Onion Detector (v8.1): Now with network error handling.");
 
 // An object to store the "available" .onion URL for each tab.
 const tabAvailableOnions = {};
 
-// --- Function to Update the Icon (unchanged) ---
+// --- Function to Update the Icon ---
 function updateActionIcon(tabId, state, onionUrl = '') {
   let iconPath, title;
   switch (state) {
@@ -26,7 +26,6 @@ function updateActionIcon(tabId, state, onionUrl = '') {
   browser.action.setTitle({ tabId, title });
 }
 
-// --- THE "HAPPY PATH" LISTENER ---
 // This listener handles all successful requests.
 browser.webRequest.onCompleted.addListener(
   (details) => {
@@ -57,7 +56,6 @@ browser.webRequest.onCompleted.addListener(
   ["responseHeaders"]
 );
 
-// --- THE FIX: THE "ERROR PATH" LISTENER ---
 // This new listener catches network errors, like an unreachable .onion site.
 browser.webRequest.onErrorOccurred.addListener(
   (details) => {
@@ -84,3 +82,4 @@ browser.action.onClicked.addListener((tab) => {
 browser.tabs.onRemoved.addListener((tabId) => {
   delete tabAvailableOnions[tabId];
 });
+
