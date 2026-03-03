@@ -1,4 +1,4 @@
-# [Firefox addons] Onion Location Detector
+# [Firefox addon] Onion Location Detector
 
 Onion Location Detector enhances your privacy by seamlessly notifying you when a website you are visiting provides an official Tor Onion Service.
 
