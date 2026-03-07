@@ -10,7 +10,7 @@ This add-on is built with your privacy as the top priority.
 
 Take control of your privacy and discover the Tor Onion Services hidden across the web with a single, intuitive icon.
 
-You can find it on the official portal as soon as the review and approval process is completed:
+You can find it on the official portal:
 
 https://addons.mozilla.org/it/firefox/addon/simple-onion-location-detector/
 
